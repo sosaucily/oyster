@@ -28,6 +28,10 @@
 	</array>
 	<key>Plugins</key>
 	<dict>
+		<key>NativeControls</key>
+		<string>NativeControls</string>
+		<key>ShareKitPlugin</key>
+		<string>ShareKitPlugin</string>
 		<key>Device</key>
 		<string>CDVDevice</string>
 		<key>Logger</key>

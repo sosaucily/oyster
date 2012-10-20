@@ -14,6 +14,10 @@
 		1CCE6F19162FC7CB00089527 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCE6F18162FC7CB00089527 /* MessageUI.framework */; };
 		1CCE6F1B162FC7DB00089527 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCE6F1A162FC7DB00089527 /* Twitter.framework */; };
 		1CCE6F1D162FC7EF00089527 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCE6F1C162FC7EF00089527 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1CCE6F2E16325A9000089527 /* SHKSharer+Phonegap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE6F2D16325A9000089527 /* SHKSharer+Phonegap.m */; };
+		1CCE6F3116325B5A00089527 /* ShareKitPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE6F3016325B5A00089527 /* ShareKitPlugin.m */; };
+		1CCE6F3416325DE900089527 /* OysterSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE6F3316325DE900089527 /* OysterSharing.m */; };
+		1CCE6F681632623C00089527 /* NativeControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE6F671632623C00089527 /* NativeControls.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -334,6 +338,14 @@
 		1CCE6F18162FC7CB00089527 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1CCE6F1A162FC7DB00089527 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		1CCE6F1C162FC7EF00089527 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1CCE6F2A163259AE00089527 /* SHKSharer+Phonegap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHKSharer+Phonegap.h"; sourceTree = "<group>"; };
+		1CCE6F2D16325A9000089527 /* SHKSharer+Phonegap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SHKSharer+Phonegap.m"; path = "../../SHKSharer+Phonegap.m"; sourceTree = "<group>"; };
+		1CCE6F2F16325B3900089527 /* ShareKitPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareKitPlugin.h; sourceTree = "<group>"; };
+		1CCE6F3016325B5A00089527 /* ShareKitPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareKitPlugin.m; sourceTree = "<group>"; };
+		1CCE6F3216325DD400089527 /* OysterSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterSharing.h; sourceTree = "<group>"; };
+		1CCE6F3316325DE900089527 /* OysterSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterSharing.m; sourceTree = "<group>"; };
+		1CCE6F641632621700089527 /* NativeControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeControls.h; sourceTree = "<group>"; };
+		1CCE6F671632623C00089527 /* NativeControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeControls.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,8 +426,12 @@
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1CCE6F2D16325A9000089527 /* SHKSharer+Phonegap.m */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				1CCE6F2A163259AE00089527 /* SHKSharer+Phonegap.h */,
+				1CCE6F3216325DD400089527 /* OysterSharing.h */,
+				1CCE6F3316325DE900089527 /* OysterSharing.m */,
 			);
 			name = Classes;
 			path = oyster/Classes;
@@ -568,6 +584,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				1CCE6F2F16325B3900089527 /* ShareKitPlugin.h */,
+				1CCE6F3016325B5A00089527 /* ShareKitPlugin.m */,
+				1CCE6F641632621700089527 /* NativeControls.h */,
+				1CCE6F671632623C00089527 /* NativeControls.m */,
 			);
 			name = Plugins;
 			path = oyster/Plugins;
@@ -986,6 +1006,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				1CCE6F2E16325A9000089527 /* SHKSharer+Phonegap.m in Sources */,
+				1CCE6F3116325B5A00089527 /* ShareKitPlugin.m in Sources */,
+				1CCE6F3416325DE900089527 /* OysterSharing.m in Sources */,
+				1CCE6F681632623C00089527 /* NativeControls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1115,7 +1139,7 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "Submodules/**";
+				USER_HEADER_SEARCH_PATHS = "Submodules/** $(CORDOVALIB)/Classes/**";
 			};
 			name = Debug;
 		};
@@ -1151,7 +1175,7 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "Submodules/**";
+				USER_HEADER_SEARCH_PATHS = "Submodules/** $(CORDOVALIB)/Classes/**";
 			};
 			name = Release;
 		};
