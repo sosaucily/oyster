@@ -80,13 +80,14 @@
     SHKItem *item;
     
     NSString *message = [arguments objectAtIndex:1];
+
     if ([arguments objectAtIndex:2]==NULL) {
         NSURL *itemUrl = [NSURL URLWithString:[arguments objectAtIndex:2]];
         item = [SHKItem URL:itemUrl title:message contentType:SHKURLContentTypeWebpage];
     } else {
         item = [SHKItem text:message];
     }
-    
+        
     [SHKFacebook shareItem:item];
     
 }

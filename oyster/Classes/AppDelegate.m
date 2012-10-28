@@ -28,6 +28,11 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
+#import "SHK.h"
+#import "SHKConfiguration.h"
+#import "OysterSharing.h"
+#import "SHKFacebook.h"
+
 #import <Cordova/CDVPlugin.h>
 
 
@@ -106,6 +111,10 @@
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
+    //Added to initialize the ShareKit module
+    DefaultSHKConfigurator *configurator = [[OysterSharing alloc] init];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     
     return YES;
 }
@@ -134,5 +143,25 @@
     NSUInteger supportedInterfaceOrientations = (1 << UIInterfaceOrientationPortrait) | (1 << UIInterfaceOrientationLandscapeLeft) | (1 << UIInterfaceOrientationLandscapeRight) | (1 << UIInterfaceOrientationPortraitUpsideDown);
     return supportedInterfaceOrientations;
 }
+
+//Added by Jesse Smith for PhoneGap support
+- (BOOL)handleOpenURL:(NSURL*)url
+{
+    NSString* scheme = [url scheme];
+    NSString* prefix = [NSString stringWithFormat:@"fb%@", SHKCONFIG(facebookAppId)];
+    if ([scheme hasPrefix:prefix])
+        return [SHKFacebook handleOpenURL:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [self handleOpenURL:url];
+}
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+//{
+//    return [self handleOpenURL:url];
+//}
 
 @end
